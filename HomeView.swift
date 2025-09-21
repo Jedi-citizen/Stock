@@ -1,6 +1,6 @@
 //
 //  HomeView.swift
-//  Stock V2
+//  Stock
 //
 //  Created by Jedidiah Too on 3/9/25.
 //
