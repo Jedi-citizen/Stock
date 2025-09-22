@@ -1,6 +1,6 @@
 //
 //  ParentView.swift
-//  Stock
+//  TaskTracker
 //
 //  Created by Jedidiah Too on 26/8/25.
 //
