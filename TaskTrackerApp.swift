@@ -1,5 +1,5 @@
 //
-//  Stock_V2App.swift.swift
+//  TaskTrackerApp.swift
 //  TaskTracker
 //
 //  Created by Jedidiah Too on 26/8/25.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct TaskTracker: App {
+struct TaskTrackerApp: App {
     var body: some Scene {
         WindowGroup {
             HomeView()
