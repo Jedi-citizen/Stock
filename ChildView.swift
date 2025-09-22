@@ -17,15 +17,7 @@ struct ChildView: View {
     
     var body: some View {
         VStack() {
-            Spacer()
-            Text("Add Assignment")
-                .bold()
-                .font(.largeTitle)
-            Spacer()
             VStack() {
-                Spacer()
-                Spacer()
-                Spacer()
                 TextField("HW Name", text: $name)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
