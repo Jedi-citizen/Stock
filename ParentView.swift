@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ParentView: View {
     @StateObject var store = TaskStore()
-    @State private var showChild = false
     
     var body: some View {
         NavigationView {
@@ -34,9 +33,9 @@ struct ParentView: View {
                     }
                 }
             }
-            Button(action: {
-                showChild = true
-            }) {
+            NavigationLink{
+                ChildView(items: $store.items)
+            } label: {
                 Text("Add Item")
                     .padding()
                     .background(Color.blue)
@@ -47,14 +46,10 @@ struct ParentView: View {
         }
         .navigationTitle("HW List")
         .bold()
-        .sheet(isPresented: $showChild) {
-            ChildView(items: $store.items)
-                .presentationDetents([.large])
-                .presentationDragIndicator(.hidden)
         }
     }
 }
-}
+
 
 
 #Preview {
