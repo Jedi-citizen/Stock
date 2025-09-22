@@ -36,7 +36,7 @@ struct ChildView: View {
                         value: $importance, in: 1...10
                 )
                 .padding(-5)
-                .frame(width: 320, height: 10)
+                .frame(width: 300, height: 10)
                 .bold()
 
                 DatePicker("Enter Due Date", selection: $date, in: Date()..., displayedComponents: .date)
